@@ -2,6 +2,9 @@ import { useEffect, useRef, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { waitForGSAP } from '../utils/motion'
 import './ProjectDetail.css'
+import adminImg from '../assets/Admin.png'
+import doctorImg from '../assets/Doctor.png'
+import patientImg from '../assets/Patient.png'
 
 const projects = {
   medisphere: {
@@ -14,10 +17,19 @@ const projects = {
     github: 'https://github.com/CHARAN-DUSA',
     liveDemo: null,
     screenshots: [
-      { label: 'Admin Dashboard' },
-      { label: 'Doctor Panel' },
-      { label: 'Patient Booking' },
-    ],
+  {
+    label: 'Admin Dashboard',
+    src: adminImg,
+  },
+  {
+    label: 'Doctor Dashboard',
+    src: doctorImg,
+  },
+  {
+    label: 'Patient Dashboard',
+    src: patientImg,
+  },
+],
     problem: `Healthcare scheduling is fragmented — patients chase appointments through phone calls, doctors lack real-time visibility, and admins manage everything manually.
     
 MediSphere unifies the experience: patients book instantly, doctors receive real-time notifications, and admins oversee the entire platform from a single dashboard with revenue analytics and payout tracking.`,

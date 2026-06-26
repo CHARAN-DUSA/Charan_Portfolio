@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { fadeUp, fadeLeft, waitForGSAP } from '../utils/motion'
+import '../components/ProjectCard.css' 
 import './Projects.css'
 
 const projects = [
