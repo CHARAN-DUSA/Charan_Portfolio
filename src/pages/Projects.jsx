@@ -12,7 +12,7 @@ const projects = [
     name: 'MediSphere',
     id: 'medisphere',
     desc: 'Production-ready healthcare appointment platform with 50+ RESTful API endpoints, 3 user roles (Patient, Doctor, Admin), real-time notifications via SignalR, Razorpay payments, JWT auth with refresh token rotation, and Docker-containerised deployment.',
-    links: [{ href: 'https://github.com/CHARAN-DUSA', label: 'Source Code →' }],
+    links: [{ href: 'https://github.com/CHARAN-DUSA/MediSphere', label: 'Source Code →' }],
   },
   {
     number: '02',
@@ -30,7 +30,7 @@ const projects = [
     name: 'Employee Management System',
     id: 'employee',
     desc: 'Full-stack HR platform supporting onboarding, attendance, payroll, and leave management for 100+ employee records, with role-based dashboards and self-service modules.',
-    links: [{ href: 'https://github.com/CHARAN-DUSA', label: 'Source Code →' }],
+    links: [{ href: 'https://github.com/CHARAN-DUSA/C-Sharp', label: 'Source Code →' }],
   },
 ]
 
