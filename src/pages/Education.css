@@ -1,0 +1,15 @@
+.edu-section{padding:8rem 3rem;background:var(--card);overflow:hidden;}
+.edu-eyebrow{font-family:var(--font-body);font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem;}
+.edu-title{font-family:var(--font-display);font-size:clamp(3rem,7vw,6rem);text-transform:uppercase;line-height:.9;margin-bottom:3rem;}
+.edu-title .accent{color:var(--accent);}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;}
+.edu-item{background:var(--bg);border-radius:1rem;padding:2rem;border-left:4px solid var(--accent);transition:transform .3s ease,box-shadow .3s ease;}
+.edu-item:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,.08);}
+.edu-year{font-family:var(--font-body);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem;}
+.edu-degree{font-family:var(--font-display);font-size:1.6rem;text-transform:uppercase;line-height:1.1;margin-bottom:.3rem;}
+.edu-school{font-family:var(--font-body);font-size:.9rem;color:var(--muted);}
+.edu-score{margin-top:.8rem;display:inline-block;font-family:var(--font-body);font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:var(--bg);padding:.3rem .9rem;border-radius:100px;}
+.cert-grid{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:3rem;}
+.cert-pill{font-family:var(--font-body);font-size:.78rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.5rem 1.2rem;background:var(--ink);color:var(--bg);border-radius:100px;transition:background .3s ease,transform .2s ease;}
+.cert-pill:hover{background:var(--accent);transform:scale(1.05);}
+@media(max-width:768px){.edu-section{padding:5rem 1.5rem;}.edu-grid{grid-template-columns:1fr;}}

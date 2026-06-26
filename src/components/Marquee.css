@@ -1,0 +1,6 @@
+.marquee-section{overflow:hidden;padding:1.2rem 0;background:var(--ink);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);}
+.marquee-track{display:flex;gap:2rem;width:max-content;animation:marquee 24s linear infinite;}
+.marquee-track span{font-family:var(--font-display);font-size:1.1rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7);white-space:nowrap;}
+.marquee-dot{color:var(--accent)!important;font-size:.8rem!important;}
+.marquee-section:hover .marquee-track{animation-play-state:paused;}
+@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}

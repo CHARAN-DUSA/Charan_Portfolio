@@ -1,0 +1,20 @@
+.about{padding:8rem 3rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;overflow:hidden;}
+.about-eyebrow{font-family:var(--font-body);font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;}
+.about-title{font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4.5rem);line-height:1;text-transform:uppercase;}
+.about-title .accent{color:var(--accent);}
+.about-body{margin-top:1.5rem;font-family:var(--font-body);font-size:1rem;line-height:1.8;color:var(--muted);}
+.about-skills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.8rem;}
+.skill-pill{font-family:var(--font-body);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.4rem 1rem;border:1.5px solid var(--ink);border-radius:100px;transition:all .3s ease;cursor:default;}
+.skill-pill:hover{background:var(--ink);color:var(--bg);}
+.about-cta-row{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;}
+.btn-primary{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--font-body);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;color:var(--bg);background:var(--ink);padding:.85rem 1.8rem;border-radius:100px;transition:background .3s ease,transform .2s ease;}
+.btn-primary:hover{background:var(--accent);transform:scale(1.03);}
+.btn-outline{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--font-body);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;color:var(--ink);border:1.5px solid var(--ink);padding:.85rem 1.8rem;border-radius:100px;transition:all .3s ease;}
+.btn-outline:hover{background:var(--ink);color:var(--bg);}
+.about-image{position:relative;}
+.about-img-inner{width:100%;aspect-ratio:3/4;background:var(--card);border-radius:1rem;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.about-img-inner img{width:100%;height:100%;object-fit:cover;}
+.about-placeholder{font-family:var(--font-display);font-size:clamp(6rem,14vw,11rem);color:var(--muted);text-transform:uppercase;letter-spacing:-.02em;line-height:1;text-align:center;padding:2rem;opacity:.35;}
+.about-badge{position:absolute;bottom:-1.5rem;right:-1.5rem;width:110px;height:110px;background:var(--accent);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--font-body);font-weight:700;font-size:.6rem;color:var(--bg);letter-spacing:.04em;text-align:center;text-transform:uppercase;line-height:1.4;animation:spin-badge 10s linear infinite;}
+@keyframes spin-badge{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+@media(max-width:768px){.about{grid-template-columns:1fr;padding:5rem 1.5rem;gap:3rem;}.about-image{order:-1;}}
