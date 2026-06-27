@@ -64,11 +64,11 @@ MediSphere unifies the experience: patients book instantly, doctors receive real
     desc: 'AI-powered financial planning platform with 20+ calculators (SIP, EMI, retirement, tax), Redis caching, real-time dashboard updates, and a multilingual chatbot supporting English, Hindi & Hinglish.',
     github: 'https://github.com/CHARAN-DUSA',
     liveDemo: null,
-    screenshots: [
-      { label: 'Financial Dashboard' },
-      { label: 'SIP Calculator' },
-      { label: 'AI Chatbot' },
-    ],
+    // screenshots: [
+    //   { label: 'Financial Dashboard' },
+    //   { label: 'SIP Calculator' },
+    //   { label: 'AI Chatbot' },
+    // ],
     problem: `Financial literacy in India is low — most people don't have access to personalised financial guidance and struggle with complex instruments like SIPs, EMIs, and tax planning.
 
 FinWise India democratises financial planning with intuitive calculators, real-time dashboards, and an AI chatbot that communicates in English, Hindi, and Hinglish — meeting users where they are.`,
@@ -103,11 +103,11 @@ FinWise India democratises financial planning with intuitive calculators, real-t
     desc: 'Full-stack HR platform supporting onboarding, attendance, payroll, and leave management for 100+ employee records, with role-based dashboards and self-service modules.',
     github: 'https://github.com/CHARAN-DUSA',
     liveDemo: null,
-    screenshots: [
-      { label: 'HR Dashboard' },
-      { label: 'Employee Profiles' },
-      { label: 'Leave Management' },
-    ],
+    // screenshots: [
+    //   { label: 'HR Dashboard' },
+    //   { label: 'Employee Profiles' },
+    //   { label: 'Leave Management' },
+    // ],
     problem: `HR teams in growing organisations are bogged down with manual processes — spreadsheet-based attendance, email leave requests, and fragmented payroll records slow everything down.
 
 The Employee Management System centralises all HR operations into a single platform, giving admins full visibility and giving employees a self-service portal to manage their own records and requests.`,
@@ -230,24 +230,26 @@ export default function ProjectDetail() {
       </section>
 
       {/* Screenshots */}
-      <section className="pd-screenshots">
-        <p className="pd-section-label">— Screenshots</p>
-        <div className="pd-screenshots-grid">
-          {project.screenshots.map((s, i) => (
-            <div
-              key={i}
-              className="pd-screenshot-item"
-              onClick={() => { if (s.src) { setLbSrc(s.src); setLbOpen(true) } }}
-            >
-              {s.src
-                ? <img src={s.src} alt={s.label} />
-                : <div className="pd-screenshot-placeholder">{s.label}</div>
-              }
-              <div className="pd-screenshot-overlay"><span>{s.label}</span></div>
-            </div>
-          ))}
+{project.screenshots.length > 0 && (
+  <section className="pd-screenshots">
+    <p className="pd-section-label">— Screenshots</p>
+    <div className="pd-screenshots-grid">
+      {project.screenshots.map((s, i) => (
+        <div
+          key={i}
+          className="pd-screenshot-item"
+          onClick={() => { if (s.src) { setLbSrc(s.src); setLbOpen(true) } }}
+        >
+          {s.src
+            ? <img src={s.src} alt={s.label} />
+            : <div className="pd-screenshot-placeholder">{s.label}</div>
+          }
+          <div className="pd-screenshot-overlay"><span>{s.label}</span></div>
         </div>
-      </section>
+      ))}
+    </div>
+  </section>
+)}
 
       {/* Details */}
       <section className="pd-details">
