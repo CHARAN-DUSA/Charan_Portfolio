@@ -11,6 +11,7 @@ import ProjectDetail from './pages/ProjectDetail'
 import Education from './pages/Education'
 import Experience from './pages/Experience'
 import Contact from './pages/Contact'
+import Connect from './pages/Connect'
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
             <Projects />
             <Skills />
             <About />
+            <Connect/>
             <Education />
             <Experience />
             <Contact />
