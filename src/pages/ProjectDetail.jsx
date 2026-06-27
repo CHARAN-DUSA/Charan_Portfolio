@@ -69,6 +69,7 @@ MediSphere unifies the experience: patients book instantly, doctors receive real
     //   { label: 'SIP Calculator' },
     //   { label: 'AI Chatbot' },
     // ],
+    screenshots: [],
     problem: `Financial literacy in India is low — most people don't have access to personalised financial guidance and struggle with complex instruments like SIPs, EMIs, and tax planning.
 
 FinWise India democratises financial planning with intuitive calculators, real-time dashboards, and an AI chatbot that communicates in English, Hindi, and Hinglish — meeting users where they are.`,
@@ -108,6 +109,7 @@ FinWise India democratises financial planning with intuitive calculators, real-t
     //   { label: 'Employee Profiles' },
     //   { label: 'Leave Management' },
     // ],
+    screenshots: [],
     problem: `HR teams in growing organisations are bogged down with manual processes — spreadsheet-based attendance, email leave requests, and fragmented payroll records slow everything down.
 
 The Employee Management System centralises all HR operations into a single platform, giving admins full visibility and giving employees a self-service portal to manage their own records and requests.`,
