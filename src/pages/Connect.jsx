@@ -49,7 +49,7 @@ export default function Connect() {
 
   async function submit() {
     if (!form.message.trim()) { shake(); return }
-    const res = await fetch('https://formspree.io/f/mbdplbbd', {
+    const res = await fetch('https://formspree.io/f/mrewkgjd', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...form, budget: budgetValues[budget] })
