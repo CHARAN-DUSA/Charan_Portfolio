@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { fadeLeft, fadeRight, waitForGSAP } from "../utils/motion";
 import profileImg from "../assets/Profile.png";
 import "./About.css";
+
 const pills = [
   "ASP.NET Core",
   "Angular",
@@ -53,9 +54,7 @@ export default function About() {
           ))}
         </div>
         <div className="about-cta-row">
-          <a className="btn-primary" href="mailto:charandusa123@gmail.com">
-            Let's Talk <span>→</span>
-          </a>
+            <a className="btn-primary" href="#connect">Let's Talk <span>→</span></a>
           <a
             className="btn-outline"
             href="https://github.com/CHARAN-DUSA"
