@@ -9,7 +9,7 @@ export default function Navbar() {
   const [active, setActive] = useState('')
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
-  const isDetail = location.pathname.startsWith('/projects/')
+  const isDetail = location.pathname.startsWith('/projects/') || location.pathname === '/connect'
 
   useEffect(() => {
     const onScroll = () => {

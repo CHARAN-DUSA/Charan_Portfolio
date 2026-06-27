@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { fadeLeft, fadeRight, waitForGSAP } from "../utils/motion";
+import { Link } from 'react-router-dom'
 import profileImg from "../assets/Profile.png";
 import "./About.css";
 
@@ -54,7 +55,7 @@ export default function About() {
           ))}
         </div>
         <div className="about-cta-row">
-            <a className="btn-primary" href="#connect">Let's Talk <span>→</span></a>
+            <Link className="btn-primary" to="/connect">Let's Talk <span>→</span></Link>
           <a
             className="btn-outline"
             href="https://github.com/CHARAN-DUSA"

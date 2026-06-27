@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { waitForGSAP } from '../utils/motion'
 import './Connect.css'
+import { Link } from 'react-router-dom'
 
 const budgetValues = [
   '₹5,000','₹10,000','₹15,000','₹20,000','₹25,000',
@@ -14,6 +15,8 @@ export default function Connect() {
   const [form, setForm] = useState({
     name: '', email: '', projType: '', timeline: '', message: ''
   })
+  
+  
 
   const totalSteps = 4
 
@@ -24,6 +27,9 @@ export default function Connect() {
       g.from('.contact-right', { opacity: 0, x: 60, duration: 0.9, ease: 'power3.out', delay: 0.15 })
     })
   }, [])
+  useEffect(() => {
+  window.scrollTo(0, 0)
+}, [])
 
   function shake() {
     waitForGSAP(() => {
